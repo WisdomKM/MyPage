@@ -1,0 +1,163 @@
+body {
+background-image: url('https://s1.1zoom.me/big3/596/Ice_cream_Chocolate_Three_3_568803_5466x3644.jpg');
+background-size: cover;
+background-attachment: fixed;
+}
+
+header {
+padding: 10px;
+background-color: Wheat;
+}
+
+button {
+background-color: wheat;
+padding: 5px;
+font-family: jokerman;
+color: oxfordblue;
+}
+h1 {
+font-family: jokerman;
+color: black;
+text-align: left;
+}
+
+h2 {
+font-family: jokerman;
+color: wheat;
+text-align: left;
+font-size: 200%;
+}
+
+.opening {
+height: 500px;
+padding: 20px;
+background-image: url('https://s1.1zoom.me/big3/466/373640-svetik.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 20px;
+}
+.flavours {
+height: 500px;
+padding: 20px;
+background-image: url('https://s1.1zoom.me/big3/222/Ice_cream_Dress_Smile_Joy_Glasses_605519_5120x3414.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 20px;
+}
+
+.Dessert {
+height: 500px;
+padding: 20px;
+background-image: url('https://s1.1zoom.me/big3/358/Sweets_Ice_cream_Powidl_Black_background_Balls_527369_5202x3744.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 20px;
+}
+
+.Cones {
+height: 300px;
+padding: 20px;
+background-image: url('https://s1.1zoom.me/big3/945/Ice_cream_Berry_Ice_cream_cone_Multicolor_573875_5485x3428.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 20px;
+}
+
+.column {
+float: left;
+padding: 20px;
+}
+
+.left {
+width: 50%;
+height: 500px;
+}
+
+.right {
+width: 40%;
+height: 500px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columns {
+float: left;
+width: 30%;
+padding: 8px;
+font-family: jokerman;
+font-size: 300%;
+color: floralwhite;
+}
+
+.header {
+background-color: DarkSlateGray;
+background-size: cover;
+background-attachment: fixed;
+color: black;
+}
+
+.price {
+list-style-type: none;
+border: 3px solid black;
+margin: 0;
+padding: 0;
+-webkit-transition: 0.3s;
+transition: 0.3s;
+}
+
+.price:hover {
+box-shadow: grey;
+}
+
+.price li {
+border-bottom: 3px solid black;
+padding: 20px;
+text-align: center;
+}
+
+.price .rose {
+background-color: rose;
+font-size: 20px;
+}
+
+.Curantballs {
+height: 300px;
+padding: 20px;
+background-image: url('https://s1.1zoom.me/big3/914/Sweets_Ice_cream_Blackberry_Raspberry_Strawberry_553780_5000x3338.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 20px;
+}
+
+.Lollies {
+height: 300px;
+padding: 20px;
+background-image: url('https://s1.1zoom.me/big3/484/Dessert_Ice_cream_Strawberry_Raspberry_Chocolate_552991_2362x1602.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 20px;
+}
+#image5{
+height: 100%;
+width: 100%;
+background: url('https://s1.1zoom.me/big3/499/Sweets_Chocolate_Coffee_Ice_cream_Wood_planks_528145_5616x3744.jpg');
+background-size: cover;
+}
+
+#image6{
+height: 100%;
+width: 100%px;
+background: url('https://s1.1zoom.me/big3/495/Sweets_Ice_cream_Balls_Cup_522940_4268x2845.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
