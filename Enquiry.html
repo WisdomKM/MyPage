@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Enquiries</title>
+<link rel="stylesheet" href="mystyle2.css">
+</head>
+<body>
+
+<header>
+<a href="index.html">
+<button><b> HOME </b></button>
+</a>
+<a href="Products.html">
+<button><b> PRODUCTS </b></button>
+</a>
+<a href="AboutUs.html">
+<button><b> ABOUT US </b></button>
+</a>
+<a href="MakingAWebsite.html">
+<button><b> EXTRA </b></button>
+</a>
+<a href="Enquiry.html">
+<button><b> ENQUIRY </b></button>
+</a>
+</header>
+
+<div class="container">
+  <form method="POST" action="form-handler" onsubmit="return checkForm(this);">
+  <div class="row">
+    <div class="col-25">
+      <label for="name">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="name" name="name" placeholder="Text only field">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="number">Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="number" name="number" placeholder="(Numeric only field)">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="(Email formatted field)">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="enquiry">Enquiry</label>
+    </div>
+    <div class="col-75">
+      <textarea id="enquiry" name="enquiry" placeholder="(Memo field)" style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+<script>
+
+  function checkForm(form) {
+    // regular expression to match only alphanumeric characters and spaces
+    var regName = /^[a-zA-Z]+$/;
+    var regEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+    var regNumber = /^\d+$/;
+    var regEnquiry = /^[a-zA-Z]+$/;
+
+
+    // validation fails if the input doesn't match our regular expression
+    if(!regName.test(form.name.value)) {
+      alert("Enter a valid name");
+      form.name.focus();
+      return false;
+    }
+	if(!regNumber.test(form.number.value)) {
+	  alert("Enter a valid number");
+	  form.number.focus();
+	  return false;
+    }
+    
+	if(!regEmail.test(form.email.value)) {
+	  alert("Enter a valid email: username@example.com");
+	  form.email.focus();
+	  return false;
+    }
+	if(!regEnquiry.test(form.enquiry.value)) {
+	  alert("Enter valid text");
+	  form.enquiry.focus();
+	  return false;
+    }else {
+	alert("Enquiry successful");
+	return true
+	  }
+  }i.resetModifiedFields();
+
+</script>
+
+</body>
+</html>
